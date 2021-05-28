@@ -120,6 +120,9 @@ venv.bak/
 # PyCharm settings
 .idea
 
+# jupyterlab
+.virtual_documents/
+
 # mkdocs documentation
 /site
 
