@@ -1,0 +1,119 @@
+label,pattern,attr,replace
+cheta,chaeta,lower,
+cheta,cheta,lower,
+cheta,seta,lower,
+cheta,setaceous,lower,
+cheta,setae,lower,
+cheta,setose,lower,
+cheta,setula,lower,
+cheta_abbrev,afd,lower,anal fringe dorsal seta
+cheta_abbrev,afv,lower,anal fringe ventral seta
+cheta_abbrev,dhs1,lower,dorsal head seta 1
+cheta_abbrev,dhs10,lower,dorsal head seta 10
+cheta_abbrev,dhs11,lower,dorsal head seta 11
+cheta_abbrev,dhs2,lower,dorsal head seta 2
+cheta_abbrev,dhs3,lower,dorsal head seta 3
+cheta_abbrev,dhs4,lower,dorsal head seta 4
+cheta_abbrev,dhs5,lower,dorsal head seta 5
+cheta_abbrev,dhs6,lower,dorsal head seta 6
+cheta_abbrev,dhs7,lower,dorsal head seta 7
+cheta_abbrev,dhs8,lower,dorsal head seta 8
+cheta_abbrev,dhs9,lower,dorsal head seta 9
+cheta_abbrev,dts,lower,dorsallateral tibial seta
+cheta_abbrev,fbs,lower,femural brush seta
+cheta_abbrev,ipsi,lower,inner small posterior seta on tergite 1
+cheta_abbrev,ipsii,lower,inner small posterior seta on tergite 2
+cheta_abbrev,ipsiii,lower,inner small posterior seta on tergite 3
+cheta_abbrev,ipsiv,lower,inner small posterior seta on tergite 4
+cheta_abbrev,ipsix,lower,inner small posterior seta on tergite 9
+cheta_abbrev,ipsv,lower,inner small posterior seta on tergite 5
+cheta_abbrev,ipsvi,lower,outer small posterior seta on tergite 6
+cheta_abbrev,ipsvii,lower,inner small posterior seta on tergite 7
+cheta_abbrev,ipsviii,lower,inner small posterior seta on tergite 8
+cheta_abbrev,ls1,lower,labial seta 1
+cheta_abbrev,ls2,lower,labial seta 2
+cheta_abbrev,ls3,lower,labial seta 3
+cheta_abbrev,ls4,lower,labial seta 4
+cheta_abbrev,ls5,lower,labial seta 5
+cheta_abbrev,lvfs,lower,latero-ventral fringe seta
+cheta_abbrev,mp,lower,metapleurite seta
+cheta_abbrev,ms,lower,metasternum seta
+cheta_abbrev,mt,lower,metanotum seta
+cheta_abbrev,opsi,lower,outer small posterior seta on tergite 1
+cheta_abbrev,opsii,lower,outer small posterior seta on tergite 2
+cheta_abbrev,opsiii,lower,outer small posterior seta on tergite 3
+cheta_abbrev,opsiv,lower,outer small posterior seta on tergite 4
+cheta_abbrev,opsix,lower,outer small posterior seta on tergite 9
+cheta_abbrev,opsv,lower,outer small posterior seta on tergite 5
+cheta_abbrev,opsvi,lower,outer small posterior seta on tergite 6
+cheta_abbrev,opsvii,lower,outer small posterior seta on tergite 7
+cheta_abbrev,opsviii,lower,outer small posterior seta on tergite 8
+cheta_abbrev,pssps1,lower,postspiracular seate on tergites 1
+cheta_abbrev,pssps2,lower,postspiracular seate on tergites 2
+cheta_abbrev,pssps3,lower,postspiracular seate on tergites 3
+cheta_abbrev,pssps4,lower,postspiracular seate on tergites 4
+cheta_abbrev,pssps5,lower,postspiracular seate on tergites 5
+cheta_abbrev,pssps6,lower,postspiracular seate on tergites 6
+cheta_abbrev,pssps7,lower,postspiracular seate on tergites 7
+cheta_abbrev,pssps8,lower,postspiracular seate on tergites 8
+cheta_abbrev,pssps9,lower,postspiracular seate on tergites 9
+cheta_abbrev,vts,lower,ventrolateral tibial seta
+cheta_abbrev,vu,lower,vulval seate
+heading,material and methods,lower,
+heading,results,lower,
+heading,systematics,lower,
+measure_abbrev,anw,lower,anus width
+measure_abbrev,awi,lower,abdomen width at tergite 1
+measure_abbrev,awii,lower,abdomen width at tergite 2
+measure_abbrev,awiii,lower,abdomen width at tergite 3
+measure_abbrev,awiv,lower,abdomen width at tergite 4
+measure_abbrev,awix,lower,abdomen width at tergite 9
+measure_abbrev,awv,lower,abdomen width at tergite 5
+measure_abbrev,awvi,lower,abdomen width at tergite 6
+measure_abbrev,awvii,lower,abdomen width at tergite 7
+measure_abbrev,awviii,lower,abdomen width at tergite 8
+measure_abbrev,gl,lower,genital apparat length
+measure_abbrev,gsl,lower,genital sclerite length
+measure_abbrev,gw,lower,genital apparat width
+measure_abbrev,hl,lower,head length
+measure_abbrev,hlwr,lower,head length:width ratio
+measure_abbrev,hw,lower,head width
+measure_abbrev,mtw,lower,metathorax width
+measure_abbrev,mw,lower,metanotum width
+measure_abbrev,paw,lower,preantennal width
+measure_abbrev,pl,lower,paramere length
+measure_abbrev,pow,lower,preocular width
+measure_abbrev,pw,lower,prothorax width
+measure_abbrev,tl,lower,total length
+measure_abbrev,tlwr,lower,total length:width ratio
+measure_abbrev,tw,lower,head temple width
+part_abbrev,a1,lower,aster 1
+part_abbrev,a2,lower,aster 2
+part_abbrev,a3,lower,aster 3
+part_abbrev,me,lower,mesonotum
+part_abbrev,pi,lower,pleurite 1
+part_abbrev,pii,lower,pleurite 2
+part_abbrev,piii,lower,pleurite 3
+part_abbrev,piv,lower,pleurite 4
+part_abbrev,pv,lower,pleurite 5
+part_abbrev,pvi,lower,pleurite 6
+part_abbrev,pvii,lower,pleurite 7
+part_abbrev,pviii,lower,pleurite 8
+part_abbrev,si,lower,sternite 1
+part_abbrev,sii,lower,sternite 2
+part_abbrev,siii,lower,sternite 3
+part_abbrev,siv,lower,sternite 4
+part_abbrev,six,lower,sternite 9
+part_abbrev,sv,lower,sternite 5
+part_abbrev,svi,lower,sternite 6
+part_abbrev,svii,lower,sternite 7
+part_abbrev,svii,lower,sternite 8
+part_abbrev,ti,lower,tergite 1
+part_abbrev,tii,lower,tergite 2
+part_abbrev,tiii,lower,tergite 3
+part_abbrev,tiv,lower,tergite 4
+part_abbrev,tix,lower,tergite 9
+part_abbrev,tv,lower,tergite 5
+part_abbrev,tvi,lower,tergite 6
+part_abbrev,tvii,lower,tergite 7
+part_abbrev,tviii,lower,tergite 8

@@ -6,10 +6,11 @@ import tempfile
 import textwrap
 from pathlib import Path
 
+# import pandas as pd
 import pytesseract
 from pdf2image import convert_from_path
 
-from myrsidea.pylib.util import clean_text
+# from myrsidea.pylib.util import clean_text
 
 
 def main(args):
@@ -23,9 +24,11 @@ def main(args):
             text = []
             images = convert_from_path(path, output_folder=temp_dir)
             for image in images:
-                page = pytesseract.image_to_string(image)
-                text.append(page)
-            text = clean_text(text)
+                # page = pytesseract.image_to_string(image)
+                table = pytesseract.image_to_data(image, output_type='data.frame')
+                print(table)
+                # text.append(page)
+            # text = clean_text(text)
             print(text)
 
 

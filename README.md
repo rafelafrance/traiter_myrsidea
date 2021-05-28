@@ -1,2 +1,2 @@
 # traiter_myrsidea
-Extrait traits from literature on lice
+Extract traits from literature on lice
