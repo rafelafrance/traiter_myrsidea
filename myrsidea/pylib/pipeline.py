@@ -35,7 +35,6 @@ def pipeline():
     nlp.add_pipe(SENTENCE, before='parser', config={'automatic': ['heading']})
 
     # debug_tokens(nlp)
-
     # Add a set of pipes to group terms into larger traits
     config = {'overwrite_ents': True}
     group_ruler = nlp.add_pipe('entity_ruler', name='group_ruler', config=config)
