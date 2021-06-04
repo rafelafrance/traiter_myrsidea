@@ -40,7 +40,6 @@ BODY_PART = MatcherPatterns(
 @spacy.registry.misc(BODY_PART.on_match)
 def body_part(ent):
     """Enrich a body part span."""
-    print(ent)
     data = {}
 
     parts = JOINER_RE.split(ent.text.lower())
