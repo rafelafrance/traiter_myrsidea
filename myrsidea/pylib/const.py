@@ -2,7 +2,7 @@
 from pathlib import Path
 
 from traiter.const import CLOSE, COMMA, CROSS, DASH, EQ, FLOAT_TOKEN_RE, OPEN
-from traiter.terms.itis import Itis
+from traiter.terms.itis import ITIS_DB, Itis
 
 ROOT_DIR = Path('.') if str(Path.cwd()).endswith('myrsidea') else Path('..')
 
@@ -29,10 +29,16 @@ TERMS += Itis.shared('units', labels='metric_length')
 TERMS += Itis.read_csv(VOCAB_DIR / 'myrsidea_terms.csv')
 TERMS += Itis.read_csv(VOCAB_DIR / 'myrsidea_species.csv')
 TERMS += Itis.abbrev_species(TERMS, label='myrsidea')
-TERMS += Itis.taxon_level_terms(
-    TERMS, label='myrsidea', new_label='myrsidea_genus', level='genus')
-TERMS += Itis.taxon_level_terms(TERMS, label='mammalia')
-TERMS += Itis.abbrev_species(TERMS, label='mammalia')
+
+if ITIS_DB.exists():
+    TERMS += Itis.itis('Aves', label='aves')
+    TERMS += Itis.itis_common_names('Aves')
+    TERMS += Itis.taxon_level_terms(
+        TERMS, label='myrsidea', new_label='myrsidea_genus', level='genus')
+else:
+    TERMS += Itis.mock_itis_traits(VOCAB_DIR / 'mock_itis_terms.csv', 'aves')
+
+TERMS += Itis.abbrev_species(TERMS, label='aves')
 
 REPLACE = TERMS.pattern_dict('replace')
 
@@ -73,4 +79,4 @@ COMMON_PATTERNS = {
 
 # #########################################################################
 # Remove these stray entities
-FORGET = """ """.split()
+FORGET = """ number_word """.split()

@@ -5,14 +5,16 @@ from traiter.patterns.matcher_patterns import (
     add_ruler_patterns, patterns_to_dispatch)
 from traiter.pipes.add_entity_data import ADD_ENTITY_DATA
 from traiter.pipes.cache import CACHE_LABEL
+from traiter.pipes.cleanup import CLEANUP
 # from traiter.pipes.debug import debug_tokens
 from traiter.pipes.sentence import SENTENCE
 from traiter.tokenizer_util import append_abbrevs, append_tokenizer_regexes
 
 from myrsidea.patterns.body_part import BODY_PART
-from myrsidea.pylib.const import ABBREVS, TERMS
+from myrsidea.patterns.host import HOST_COMMON_NAME, HOST_SPECIES
+from myrsidea.pylib.const import ABBREVS, FORGET, TERMS
 
-GROUPERS = [BODY_PART]
+GROUPERS = [BODY_PART, HOST_COMMON_NAME, HOST_SPECIES]
 MATCHERS = []
 
 
@@ -55,7 +57,7 @@ def pipeline():
     nlp.add_pipe(ADD_ENTITY_DATA, config=config)
 
     # Remove unused entities
-    # nlp.add_pipe(CLEANUP, config={'entities': FORGET})
+    nlp.add_pipe(CLEANUP, config={'entities': FORGET})
 
     # config = {'patterns': as_dict(PART_LINKER, SEX_LINKER, SUBPART_LINKER)}
     # nlp.add_pipe(DEPENDENCY, name='part_linker', config=config)
