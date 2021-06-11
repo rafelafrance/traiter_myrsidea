@@ -21,7 +21,7 @@ HOST_COMMON_NAME = MatcherPatterns(
 
 @spacy.registry.misc(HOST_SPECIES.on_match)
 def host_species(ent):
-    """Enrich a body part span."""
+    """Enrich a trait match."""
     data = {}
 
     text = ent.text.lower()
@@ -32,7 +32,7 @@ def host_species(ent):
 
 @spacy.registry.misc(HOST_COMMON_NAME.on_match)
 def host_common_name(ent):
-    """Enrich a body part span."""
+    """Enrich a trait match."""
     data = {}
 
     text = ent.text.lower()

@@ -6,16 +6,17 @@ from traiter.patterns.matcher_patterns import (
 from traiter.pipes.add_entity_data import ADD_ENTITY_DATA
 from traiter.pipes.cache import CACHE_LABEL
 from traiter.pipes.cleanup import CLEANUP
-# from traiter.pipes.debug import debug_tokens
+from traiter.pipes.debug import debug_tokens
 from traiter.pipes.sentence import SENTENCE
 from traiter.tokenizer_util import append_abbrevs, append_tokenizer_regexes
 
 from myrsidea.patterns.body_part import BODY_PART
 from myrsidea.patterns.host import HOST_COMMON_NAME, HOST_SPECIES
+from myrsidea.patterns.measurement import MEASUREMENT, SAMPLE
 from myrsidea.pylib.const import ABBREVS, FORGET, TERMS
 
 GROUPERS = [BODY_PART, HOST_COMMON_NAME, HOST_SPECIES]
-MATCHERS = []
+MATCHERS = [MEASUREMENT, SAMPLE]
 
 
 def pipeline():
@@ -43,13 +44,13 @@ def pipeline():
     group_ruler = nlp.add_pipe('entity_ruler', name='group_ruler', config=config)
     add_ruler_patterns(group_ruler, GROUPERS)
 
-    # nlp.add_pipe(CACHE_LABEL, name='group_cache')
-    # nlp.add_pipe('merge_entities', name='group_merger')
+    nlp.add_pipe(CACHE_LABEL, name='group_cache')
+    nlp.add_pipe('merge_entities', name='group_merger')
 
     # Add a pipe to group tokens into larger traits
-    # config = {'overwrite_ents': True}
-    # match_ruler = nlp.add_pipe('entity_ruler', name='match_ruler', config=config)
-    # add_ruler_patterns(match_ruler, MATCHERS)
+    config = {'overwrite_ents': True}
+    match_ruler = nlp.add_pipe('entity_ruler', name='match_ruler', config=config)
+    add_ruler_patterns(match_ruler, MATCHERS)
 
     # debug_tokens(nlp)
 

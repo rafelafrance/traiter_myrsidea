@@ -69,7 +69,7 @@ COMMON_PATTERNS = {
     '&/,/or': {'LOWER': {'IN': CONJ + COMMA}},
     '99': {'IS_DIGIT': True},
     '99.9': {'TEXT': {'REGEX': FLOAT_TOKEN_RE}},
-    'cm': {'ENT_TYPE': 'metric_length'},
+    'mm': {'ENT_TYPE': 'metric_length'},
     'part': {'ENT_TYPE': 'part'},
     'any_part': {'ENT_TYPE': {'IN': ['part_loc', 'part']}},
     'part_loc': {'ENT_TYPE': {'IN': ['part_loc']}},

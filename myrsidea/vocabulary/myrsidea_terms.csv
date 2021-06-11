@@ -62,31 +62,34 @@ cheta_abbrev,vu,lower,vulval seate
 heading,material and methods,lower,
 heading,results,lower,
 heading,systematics,lower,
-measure_abbrev,anw,lower,anus width
-measure_abbrev,awi,lower,abdomen width at tergite 1
-measure_abbrev,awii,lower,abdomen width at tergite 2
-measure_abbrev,awiii,lower,abdomen width at tergite 3
-measure_abbrev,awiv,lower,abdomen width at tergite 4
-measure_abbrev,awix,lower,abdomen width at tergite 9
-measure_abbrev,awv,lower,abdomen width at tergite 5
-measure_abbrev,awvi,lower,abdomen width at tergite 6
-measure_abbrev,awvii,lower,abdomen width at tergite 7
-measure_abbrev,awviii,lower,abdomen width at tergite 8
-measure_abbrev,gl,lower,genital apparat length
-measure_abbrev,gsl,lower,genital sclerite length
-measure_abbrev,gw,lower,genital apparat width
-measure_abbrev,hl,lower,head length
-measure_abbrev,hlwr,lower,head length:width ratio
-measure_abbrev,hw,lower,head width
-measure_abbrev,mtw,lower,metathorax width
-measure_abbrev,mw,lower,metanotum width
-measure_abbrev,paw,lower,preantennal width
-measure_abbrev,pl,lower,paramere length
-measure_abbrev,pow,lower,preocular width
-measure_abbrev,pw,lower,prothorax width
-measure_abbrev,tl,lower,total length
-measure_abbrev,tlwr,lower,total length:width ratio
-measure_abbrev,tw,lower,head temple width
+measure,anw,lower,anus width
+measure,awi,lower,abdomen width at tergite 1
+measure,awii,lower,abdomen width at tergite 2
+measure,awiii,lower,abdomen width at tergite 3
+measure,awiv,lower,abdomen width at tergite 4
+measure,awix,lower,abdomen width at tergite 9
+measure,awv,lower,abdomen width at tergite 5
+measure,awvi,lower,abdomen width at tergite 6
+measure,awvii,lower,abdomen width at tergite 7
+measure,awviii,lower,abdomen width at tergite 8
+measure,gl,lower,genital apparat length
+measure,gsl,lower,genital sclerite length
+measure,gw,lower,genital apparat width
+measure,hl,lower,head length
+measure,hlwr,lower,head length:width ratio
+measure,hw,lower,head width
+measure,mspl,lower,
+measure,mtw,lower,metathorax width
+measure,mw,lower,metanotum width
+measure,ow,lower,
+measure,paw,lower,preantennal width
+measure,pl,lower,paramere length
+measure,pow,lower,preocular width
+measure,pspl,lower,
+measure,pw,lower,prothorax width
+measure,tl,lower,total length
+measure,tlwr,lower,total length:width ratio
+measure,tw,lower,head temple width
 part_abbrev,a1,lower,aster 1
 part_abbrev,a2,lower,aster 2
 part_abbrev,a3,lower,aster 3
