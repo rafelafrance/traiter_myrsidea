@@ -64,6 +64,7 @@ COMMON_PATTERNS = {
     '=': {'TEXT': {'IN': EQ_}},  # ¼ = 0xbc
     'x': {'LOWER': {'IN': CROSS + ['⫻']}},  # ⫻ = 0x3f
     '-': {'TEXT': {'IN': DASH}},
+    ',': {'TEXT': {'IN': COMMA}},
     '-/to': {'LOWER': {'IN': DASH + ['to']}},
     '&/or': {'LOWER': {'IN': CONJ}},
     '&/,/or': {'LOWER': {'IN': CONJ + COMMA}},

@@ -12,11 +12,11 @@ from traiter.tokenizer_util import append_abbrevs, append_tokenizer_regexes
 
 from myrsidea.patterns.body_part import BODY_PART
 from myrsidea.patterns.host import HOST_COMMON_NAME, HOST_SPECIES
-from myrsidea.patterns.measurement import MEASUREMENT, SAMPLE
+from myrsidea.patterns.measurement import MEASUREMENT, RATIO, SAMPLE
 from myrsidea.pylib.const import ABBREVS, FORGET, TERMS
 
 GROUPERS = [BODY_PART, HOST_COMMON_NAME, HOST_SPECIES]
-MATCHERS = [MEASUREMENT, SAMPLE]
+MATCHERS = [MEASUREMENT, RATIO, SAMPLE]
 
 
 def pipeline():

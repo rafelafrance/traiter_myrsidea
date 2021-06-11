@@ -139,4 +139,4 @@ dmypy.json
 data/
 output/
 junk*
-
+.~lock.*

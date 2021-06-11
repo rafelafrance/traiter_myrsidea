@@ -1,0 +1,69 @@
+We would also like to have
+
+Host
+Locality
+Date
+
+Traits found across Myrsidea:
+A. The primary characteristics have higher determination value and could be also useful as a base for creating of the determination keys. There are XY characteristics, such as:
+1. A degree of hypopharynx reduction (Hp; reduced, weak, strong).
+2. Shape of sternite II and presence (called as “notched”) or absence of the depression on its anterior margin.
+3. Number of longer posterior setae on protonotum (normally 6 or 8).
+4. Shape of metanotum (normal, enlarged).
+5. Shape of tergites (straight, enlarged: concave, U-shaped, V-shaped, etc.).
+6. Presence or absence of median gap in row of setae on all tergites (fig. x).
+7. Presence or absence of anterior setae on pleurites, tergites and sternites.
+8. Presence or absence of setae on sternite I.
+9. Vulval margin in females (Vu; serrated, smooth).
+10. In males, type of genital sclerite (GS).
+
+B. The secondary characteristics has lower determination value, but in some cases, they can be equal to primary ones. There are Y secondary characteristics, such as:
+Head:
+1. Number of latero-ventral fringe setae (lvfs).
+2. Size of labial seta 5 (ls5).
+3. Size and ratio of head setae 10 (dhs10) and 11 (dhs11).
+4. Number of gular setae (Gu).
+Body:
+5. Shape of mesonotum (ME).
+6. Number of setae on metanotum (MT).
+7. Shape and number of setae on metasternum (MS).
+8. Number of setae on metapleurite (MP) and pleurite I – VIII (PI – PVIII).
+9. Number of setae on tergite I – IX (TI – TIX).
+10. Length of postspiracular seate on tergites I – VIII (pssps1 – pssps8).
+11. Number of setae on sternite I – VII and VIII+IX (SI – SIX).
+12. Number and size of setae on aster (a1, a2, a3, Fig. x.).
+13. Size of inner and outer small posterior setae on tergite IX (opsIX, ipsIX).
+14. Size of inner and outer posterior setae on pleurite VIII.
+15. Shape of vulval margin (serrated, smooth) and number of vulval seate (Vu).
+16. Number of dorsal and ventral setae on anal fridge in females (afd, afv).
+Legs:
+First leg
+17. Outer dorso-lateral and ventro-lateral tibial setae (dts, vts).
+Third leg
+18. Number of setae in femural brush (fbs).
+C. Dimensions are separated group as itself, due to their complicated determination value (phenotype plasticity). Clay (1966) indicate dimensions as assistant determination characteristics. Also, some authors point out on the Harrison rule (Harrison, 1915; Price et al., 2003; Harnos et al., 2016), which means that the size of louse individual could correlate with the size of its host. Besides that, the dimensions can be modified during the slide mounting. To help with the last issue, we added head length:width ratio and total length:width ratio. In total, there are 14 dimensional characteristics, such as:
+1. Head length (HL).
+2. Head width (HW).
+3. Head length:width ratio (HLWR).
+4. Preocular width (POW).
+5. Head temple width (TW).
+6. Prothorax width (PW).
+7. Metanotum width (MW).
+8. Abdomen width (measured on tergite IV; AWIV).
+9. Anus width (in females; ANW).
+10. Genital apparat width (in males; GW).
+11. Genital apparat length (in males, GL).
+12. Genital sclerite length (in males, GSL).
+13. Total length (TL).
+14. Total length:width ratio (TLWR).
+D. The general morphology of eggs was implied by Abrahamovich & Cicchino (1985). Lately, Cicchino & Valim (2015) in their study showed importance of the egg morphology in the taxonomic descriptions of Myrsidea. They compared and described the external chorionic architecture of the egg of M. serini (Séguy, 1944) and M. psittaci Carriker, 1955. Curiosity of this comparison is that even these two species can occur on the same host individual, they can be easily distinguished by egg morphology. The characteristics for description of egg morphology used by Cicchino & Valim (2015) are as follow:
+Operculum
+1. shape, lateral view (hemisphaerical; conical)
+2. apical phanerum (absent; present)
+3. callus (proeminent; not proeminent)
+4. degree of impression of the mesh (light – conspicuous, erased)
+Amphora
+5. shape, lateral view (ellipsoidal, ventricose; fusiform)
+6. sculture (absent; present)
+Whole egg
+7. measurements: total length (apical phanerum excluded) x total width

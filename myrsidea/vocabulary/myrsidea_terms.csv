@@ -8,17 +8,6 @@ cheta,setose,lower,
 cheta,setula,lower,
 cheta_abbrev,afd,lower,anal fringe dorsal seta
 cheta_abbrev,afv,lower,anal fringe ventral seta
-cheta_abbrev,dhs1,lower,dorsal head seta 1
-cheta_abbrev,dhs10,lower,dorsal head seta 10
-cheta_abbrev,dhs11,lower,dorsal head seta 11
-cheta_abbrev,dhs2,lower,dorsal head seta 2
-cheta_abbrev,dhs3,lower,dorsal head seta 3
-cheta_abbrev,dhs4,lower,dorsal head seta 4
-cheta_abbrev,dhs5,lower,dorsal head seta 5
-cheta_abbrev,dhs6,lower,dorsal head seta 6
-cheta_abbrev,dhs7,lower,dorsal head seta 7
-cheta_abbrev,dhs8,lower,dorsal head seta 8
-cheta_abbrev,dhs9,lower,dorsal head seta 9
 cheta_abbrev,dts,lower,dorsallateral tibial seta
 cheta_abbrev,fbs,lower,femural brush seta
 cheta_abbrev,ipsi,lower,inner small posterior seta on tergite 1
@@ -30,11 +19,6 @@ cheta_abbrev,ipsv,lower,inner small posterior seta on tergite 5
 cheta_abbrev,ipsvi,lower,outer small posterior seta on tergite 6
 cheta_abbrev,ipsvii,lower,inner small posterior seta on tergite 7
 cheta_abbrev,ipsviii,lower,inner small posterior seta on tergite 8
-cheta_abbrev,ls1,lower,labial seta 1
-cheta_abbrev,ls2,lower,labial seta 2
-cheta_abbrev,ls3,lower,labial seta 3
-cheta_abbrev,ls4,lower,labial seta 4
-cheta_abbrev,ls5,lower,labial seta 5
 cheta_abbrev,lvfs,lower,latero-ventral fringe seta
 cheta_abbrev,mp,lower,metapleurite seta
 cheta_abbrev,ms,lower,metasternum seta
@@ -48,20 +32,38 @@ cheta_abbrev,opsv,lower,outer small posterior seta on tergite 5
 cheta_abbrev,opsvi,lower,outer small posterior seta on tergite 6
 cheta_abbrev,opsvii,lower,outer small posterior seta on tergite 7
 cheta_abbrev,opsviii,lower,outer small posterior seta on tergite 8
-cheta_abbrev,pssps1,lower,postspiracular seate on tergites 1
-cheta_abbrev,pssps2,lower,postspiracular seate on tergites 2
-cheta_abbrev,pssps3,lower,postspiracular seate on tergites 3
-cheta_abbrev,pssps4,lower,postspiracular seate on tergites 4
-cheta_abbrev,pssps5,lower,postspiracular seate on tergites 5
-cheta_abbrev,pssps6,lower,postspiracular seate on tergites 6
-cheta_abbrev,pssps7,lower,postspiracular seate on tergites 7
-cheta_abbrev,pssps8,lower,postspiracular seate on tergites 8
-cheta_abbrev,pssps9,lower,postspiracular seate on tergites 9
 cheta_abbrev,vts,lower,ventrolateral tibial seta
 cheta_abbrev,vu,lower,vulval seate
+head_seta,dhs1,lower,dorsal head seta 1
+head_seta,dhs10,lower,dorsal head seta 10
+head_seta,dhs11,lower,dorsal head seta 11
+head_seta,dhs2,lower,dorsal head seta 2
+head_seta,dhs3,lower,dorsal head seta 3
+head_seta,dhs4,lower,dorsal head seta 4
+head_seta,dhs5,lower,dorsal head seta 5
+head_seta,dhs6,lower,dorsal head seta 6
+head_seta,dhs7,lower,dorsal head seta 7
+head_seta,dhs8,lower,dorsal head seta 8
+head_seta,dhs9,lower,dorsal head seta 9
+head_seta,dorsal head seta 1,lower,
+head_seta,dorsal head seta 10,lower,
+head_seta,dorsal head seta 11,lower,
+head_seta,dorsal head seta 2,lower,
+head_seta,dorsal head seta 3,lower,
+head_seta,dorsal head seta 4,lower,
+head_seta,dorsal head seta 5,lower,
+head_seta,dorsal head seta 6,lower,
+head_seta,dorsal head seta 7,lower,
+head_seta,dorsal head seta 8,lower,
+head_seta,dorsal head seta 9,lower,
 heading,material and methods,lower,
 heading,results,lower,
 heading,systematics,lower,
+labial_seta,ls1,lower,labial seta 1
+labial_seta,ls2,lower,labial seta 2
+labial_seta,ls3,lower,labial seta 3
+labial_seta,ls4,lower,labial seta 4
+labial_seta,ls5,lower,labial seta 5
 measure,anw,lower,anus width
 measure,awi,lower,abdomen width at tergite 1
 measure,awii,lower,abdomen width at tergite 2
@@ -120,3 +122,21 @@ part_abbrev,tv,lower,tergite 5
 part_abbrev,tvi,lower,tergite 6
 part_abbrev,tvii,lower,tergite 7
 part_abbrev,tviii,lower,tergite 8
+postspiracular_seta,postspiracular seate on tergites 1,lower,
+postspiracular_seta,postspiracular seate on tergites 2,lower,
+postspiracular_seta,postspiracular seate on tergites 3,lower,
+postspiracular_seta,postspiracular seate on tergites 4,lower,
+postspiracular_seta,postspiracular seate on tergites 5,lower,
+postspiracular_seta,postspiracular seate on tergites 6,lower,
+postspiracular_seta,postspiracular seate on tergites 7,lower,
+postspiracular_seta,postspiracular seate on tergites 8,lower,
+postspiracular_seta,postspiracular seate on tergites 9,lower,
+postspiracular_seta,pssps1,lower,postspiracular seta on tergites 1
+postspiracular_seta,pssps2,lower,postspiracular seta on tergites 2
+postspiracular_seta,pssps3,lower,postspiracular seta on tergites 3
+postspiracular_seta,pssps4,lower,postspiracular seta on tergites 4
+postspiracular_seta,pssps5,lower,postspiracular seta on tergites 5
+postspiracular_seta,pssps6,lower,postspiracular seta on tergites 6
+postspiracular_seta,pssps7,lower,postspiracular seta on tergites 7
+postspiracular_seta,pssps8,lower,postspiracular seta on tergites 8
+postspiracular_seta,pssps9,lower,postspiracular seta on tergites 9
