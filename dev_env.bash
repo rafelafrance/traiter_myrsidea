@@ -22,9 +22,8 @@ pip install -e ../traiter
 pip install -U pynvim
 pip install -U 'python-lsp-server[all]'
 pip install -U autopep8 flake8 isort pylint yapf pydocstyle
-pip install -U ipyparallel
+pip install -U jupyter jupyter_nbextensions_configurator ipyparallel
 
-#pip install -U jupyter jupyter_nbextensions_configurator
 #pip install -U jupyterlab
 #pip install -U jupyterlab_code_formatter
 #pip install -U jupyterlab-drawio

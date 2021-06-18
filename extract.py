@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
-
-"""Extract myrsidea traits from scientific literature (PDFs to text)."""
+#!/usr/bin/env python
+"""Extract Myrsidea traits from scientific literature (PDFs converted to text)."""
 
 import argparse
 import textwrap
@@ -22,15 +21,20 @@ def main(args):
 
 def parse_args():
     """Process command-line arguments."""
-    description = """Parse data from lice papers."""
+    description = """
+        Extract Myrsidea traits from scientific literature 
+        (PDFs converted to text)."""
+
     arg_parser = argparse.ArgumentParser(
         description=textwrap.dedent(description),
         fromfile_prefix_chars='@')
 
-    arg_parser.add_argument('--text', '-t', help="""Path to the text file to parse.""")
+    arg_parser.add_argument(
+        '--text', type=argparse.FileType(),
+        help="""Path to the input text file to parse.""")
 
     arg_parser.add_argument(
-        '--html-file', '-H', type=argparse.FileType('w'),
+        '--html', type=argparse.FileType('w'),
         help="""Output the results to this HTML file.""")
 
     args = arg_parser.parse_args()
