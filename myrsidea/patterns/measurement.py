@@ -12,7 +12,7 @@ from myrsidea.pylib.const import COMMON_PATTERNS, REPLACE, TERMS
 UNITS_RE = [t['pattern'] for t in TERMS if t['label'] == 'metric_length']
 UNITS_RE = '(?<![A-Za-z])' + list_to_re_choice(UNITS_RE) + r'\b'
 
-MEASURE_KEY = """measure labial_seta head_seta """.split()
+MEASURE_KEY = """measure labial_seta head_seta postspiracular_seta """.split()
 RATIO_SYM = """ : / """.split()
 
 DECODER = COMMON_PATTERNS | {
