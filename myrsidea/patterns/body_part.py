@@ -9,8 +9,6 @@ from traiter.patterns.matcher_patterns import MatcherPatterns
 from myrsidea.pylib.const import COMMON_PATTERNS, CONJ, MISSING, REPLACE
 
 JOINER = CONJ + COMMA
-JOINER_RE = '|'.join(JOINER + [r'\s'])
-JOINER_RE = re.compile(rf'\b(?:{JOINER_RE})\b', flags=re.IGNORECASE)
 
 MISSING_RE = '|'.join([fr'\b{m}\b' for m in MISSING])
 MISSING_RE = re.compile(MISSING_RE, flags=re.IGNORECASE)
@@ -23,7 +21,8 @@ BODY_PART = MatcherPatterns(
         'ord': {'ENT_TYPE': {'IN': ['ordinal', 'number_word']}},
     },
     patterns=[
-        'part',
+        'part+',
+        'part_loc+ part+',
         # 'missing? any_part* part',
         # 'part+ ord -? ord',
         # 'part+ 99? -? 99',
@@ -42,11 +41,9 @@ def body_part(ent):
     """Enrich a body part span."""
     data = {}
 
-    parts = JOINER_RE.split(ent.text.lower())
-    parts = [REPLACE.get(p, p) for p in parts]
+    parts = [REPLACE.get(t.lower_, t.lower_) for t in ent]
+
     text = ' '.join(parts)
-    text = re.sub(r'\s*-\s*', '-', text)
-    text = REPLACE.get(text, text)
 
     if MISSING_RE.search(ent.text.lower()) is not None:
         data['missing'] = True

@@ -67,14 +67,14 @@ def parse_args():
     description = """Convert a PDF to text then format the text for trait extraction."""
 
     epilog = dedent("""\
-        This is a 3-step process, one of which is manual.
+        This is a 3-step process:
           1) Convert the --pdf to --raw text.
-          2) Manually edit the text to remove headers, footers, figure
-             captions, etc. You may also fix any other text issues,
-             like replacing odd characters, caused imperfect
+          2) Manually edit the raw text to remove headers, footers,
+             figure captions, etc. You may also fix any other text
+             issues, like replacing odd characters, caused imperfect
              character conversions during step 1.
-          3) --format the --raw text to make it ready for trait extraction.
-          ** --raw and --format may be the same file.
+          3) --format the --raw text to make it ready for trait
+             extraction.
         """)
 
     arg_parser = argparse.ArgumentParser(

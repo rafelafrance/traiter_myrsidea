@@ -1,7 +1,7 @@
 """Utilities and constants."""
 from pathlib import Path
 
-from traiter.const import CLOSE, COMMA, CROSS, DASH, EQ, FLOAT_TOKEN_RE, OPEN
+from traiter.const import CLOSE, COMMA, CROSS, DASH, EQ, FLOAT_TOKEN_RE, OPEN, PLUS
 from traiter.terms.itis import ITIS_DB, Itis
 
 ROOT_DIR = Path('.') if str(Path.cwd()).endswith('myrsidea') else Path('..')
@@ -56,14 +56,16 @@ ABBREVS = """
 # Pattern related constants
 MISSING = """ no without missing lack lacking except excepting """.split()
 EQ_ = EQ + ['¼']
+CROSS_ = CROSS + ['⫻']
 CONJ = ['and', '&', 'or']
 
 COMMON_PATTERNS = {
     '(': {'TEXT': {'IN': OPEN}},
     ')': {'TEXT': {'IN': CLOSE}},
     '=': {'TEXT': {'IN': EQ_}},  # ¼ = 0xbc
-    'x': {'LOWER': {'IN': CROSS + ['⫻']}},  # ⫻ = 0x3f
+    'x': {'LOWER': {'IN': CROSS_}},  # ⫻ = 0x3f
     '-': {'TEXT': {'IN': DASH}},
+    '+': {'TEXT': {'IN': PLUS}},
     ',': {'TEXT': {'IN': COMMA}},
     '-/to': {'LOWER': {'IN': DASH + ['to']}},
     '&/or': {'LOWER': {'IN': CONJ}},
@@ -80,4 +82,4 @@ COMMON_PATTERNS = {
 
 # #########################################################################
 # Remove these stray entities
-FORGET = """ number_word """.split()
+FORGET = """ number_word part_loc """.split()
