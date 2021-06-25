@@ -35,6 +35,18 @@ BODY_PART = MatcherPatterns(
     ],
 )
 
+UNASSIGNED_PART = MatcherPatterns(
+    'unassigned_part',
+    on_match='myrsidea.unassigned_part.v1',
+    decoder=COMMON_PATTERNS | {
+        'roman': {'ENT_TYPE': 'roman'},
+    },
+    patterns=[
+        'roman',
+        'roman - roman',
+    ],
+)
+
 
 @spacy.registry.misc(BODY_PART.on_match)
 def body_part(ent):
@@ -51,3 +63,20 @@ def body_part(ent):
     data['body_part'] = text
 
     ent._.data = data
+
+
+@spacy.registry.misc(UNASSIGNED_PART.on_match)
+def unassigned_part(ent):
+    """Enrich a body part span."""
+    # data = {}
+    #
+    # parts = [REPLACE.get(t.lower_, t.lower_) for t in ent]
+    #
+    # text = ' '.join(parts)
+    #
+    # if MISSING_RE.search(ent.text.lower()) is not None:
+    #     data['missing'] = True
+    #
+    # data['body_part'] = text
+    #
+    # ent._.data = data

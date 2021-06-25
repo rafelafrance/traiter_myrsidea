@@ -6,18 +6,18 @@ from traiter.patterns.matcher_patterns import (
 from traiter.pipes.add_entity_data import ADD_ENTITY_DATA
 from traiter.pipes.cache import CACHE_LABEL
 from traiter.pipes.cleanup import CLEANUP
-# from traiter.pipes.debug import debug_tokens, debug_ents
+# from traiter.pipes.debug import debug_tokens
 from traiter.pipes.retokenize import RETOKENIZE
 from traiter.pipes.sentence import SENTENCE
 from traiter.tokenizer_util import append_abbrevs, append_tokenizer_regexes
 
-from myrsidea.patterns.body_part import BODY_PART
+from myrsidea.patterns.body_part import BODY_PART, UNASSIGNED_PART
 from myrsidea.patterns.count import SETA_COUNT
 from myrsidea.patterns.host import HOST_COMMON_NAME, HOST_SPECIES
 from myrsidea.patterns.measurement import MEASUREMENT, RATIO, SAMPLE
 from myrsidea.pylib.const import ABBREVS, FORGET, TERMS
 
-GROUPERS = [BODY_PART, HOST_COMMON_NAME, HOST_SPECIES]
+GROUPERS = [BODY_PART, HOST_COMMON_NAME, HOST_SPECIES, UNASSIGNED_PART]
 MATCHERS = [MEASUREMENT, RATIO, SAMPLE, SETA_COUNT]
 
 

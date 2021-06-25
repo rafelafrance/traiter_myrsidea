@@ -82,3 +82,14 @@ class TestCount(unittest.TestCase):
               'start': 0,
               'end': 36}]
         )
+
+    def test_count_08(self):
+        self.assertEqual(
+            test_traits(""" Metanotum with 4-5 setae on posterior margin; """),
+            [{'part': 'metanotum seta posterior margin',
+              'count_low': 4,
+              'count_high': 5,
+              'trait': 'seta_count',
+              'start': 0,
+              'end': 44}]
+        )
