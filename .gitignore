@@ -134,9 +134,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-
 # Data
 data/
 output/
+
+# Temp files
+scratch/
 junk*
 .~lock.*

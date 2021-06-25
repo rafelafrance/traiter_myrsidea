@@ -51,3 +51,34 @@ class TestCount(unittest.TestCase):
               'start': 0,
               'end': 34}]
         )
+
+    def test_count_05(self):
+        self.assertEqual(
+            test_traits(""" Metanotum with 4-5 setae on posterior margin; """),
+            [{'part': 'metanotum seta posterior margin',
+              'count_low': 4,
+              'count_high': 5,
+              'trait': 'seta_count',
+              'start': 0,
+              'end': 44}]
+        )
+
+    def test_count_06(self):
+        self.assertEqual(
+            test_traits(""" Pronotum with 4 posterior setae """),
+            [{'part': 'pronotum posterior seta',
+              'count': 4,
+              'trait': 'seta_count',
+              'start': 0,
+              'end': 31}]
+        )
+
+    def test_count_07(self):
+        self.assertEqual(
+            test_traits(""" metasternum with 2 medium long setae. """),
+            [{'part': 'metasternum seta',
+              'count': 2,
+              'trait': 'seta_count',
+              'start': 0,
+              'end': 36}]
+        )

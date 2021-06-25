@@ -3,7 +3,7 @@
 import re
 
 import spacy
-from traiter.const import INT_RE
+from traiter.const import DASH, INT_RE
 from traiter.patterns.matcher_patterns import MatcherPatterns
 from traiter.util import to_positive_int
 
@@ -20,6 +20,7 @@ DECODER = COMMON_PATTERNS | {
     'each': {'LOWER': {'IN': BOTH}},
     'side': {'LOWER': {'IN': SIDE}},
     'prep': {'DEP': 'prep'},
+    'adj': {'POS': 'ADJ'},
 }
 
 SETA_COUNT = MatcherPatterns(
@@ -27,12 +28,18 @@ SETA_COUNT = MatcherPatterns(
     on_match='myrsidea.seta_count.v1',
     decoder=DECODER,
     patterns=[
-        'part prep 99 seta',
-        'part prep 99 seta prep each side',
-        'part missing seta',
-        'loc? subpart? prep 99 seta',
-        'loc? subpart? prep 99 + 99 seta',
         'loc subpart? missing? seta',
+        'loc? subpart? prep 99 + 99 seta',
+        'loc? subpart? prep 99 seta prep each side',
+        'loc? subpart? prep 99 seta',
+        'part missing seta',
+        'part prep 99 seta prep each side',
+        'part prep 99 seta',
+        'loc? subpart? prep 99 - 99 seta',
+        'part prep? 99 - 99 seta',
+        'part prep? 99 - 99 seta prep? loc? subpart',
+        'part prep? 99 loc? seta',
+        'part prep? 99 adj+ seta',
     ],
 )
 
@@ -44,6 +51,7 @@ def seta_count(ent):
     parts = []
     counts = []
     both = False
+    low_high = False
     for token in ent:
         label = token._.cached_label
         if label == 'body_part':
@@ -57,6 +65,8 @@ def seta_count(ent):
             parts.append(REPLACE.get(token.lower_, token.lower_))
         elif re.match(INT_RE, token.text):
             counts.append(to_positive_int(token.text))
+        elif token.text in DASH:
+            low_high = True
         elif token.lower_ in BOTH:
             both = True
         elif token.lower_ in MISSING:
@@ -67,7 +77,10 @@ def seta_count(ent):
     if both:
         counts.append(counts[0])
 
-    if len(counts) > 1:
+    if len(counts) > 1 and low_high:
+        data['count_low'] = min(counts)
+        data['count_high'] = max(counts)
+    elif len(counts) > 1:
         data['count_side_1'] = counts[0]
         data['count_side_2'] = counts[1]
     elif len(counts) == 1:
