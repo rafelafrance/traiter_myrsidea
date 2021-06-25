@@ -14,6 +14,8 @@ SIDE = """ side sides """.split()
 
 DECODER = COMMON_PATTERNS | {
     'part': {'ENT_TYPE': 'body_part'},
+    'loc': {'ENT_TYPE': 'part_loc'},
+    'subpart': {'ENT_TYPE': 'subpart'},
     'seta': {'ENT_TYPE': 'cheta'},
     'each': {'LOWER': {'IN': BOTH}},
     'side': {'LOWER': {'IN': SIDE}},
@@ -28,7 +30,9 @@ SETA_COUNT = MatcherPatterns(
         'part prep 99 seta',
         'part prep 99 seta prep each side',
         'part missing seta',
-        'part prep 99 + 99 seta',
+        'loc? subpart? prep 99 seta',
+        'loc? subpart? prep 99 + 99 seta',
+        'loc subpart? missing? seta',
     ],
 )
 
@@ -44,9 +48,13 @@ def seta_count(ent):
         label = token._.cached_label
         if label == 'body_part':
             body_part = token._.data.get('body_part', token.lower_)
-            parts.append(body_part)
+            parts.append(REPLACE.get(body_part, body_part))
         elif label == 'cheta':
             parts.append('seta')
+        elif label == 'subpart':
+            parts.append(REPLACE.get(token.lower_, token.lower_))
+        elif label == 'part_loc':
+            parts.append(REPLACE.get(token.lower_, token.lower_))
         elif re.match(INT_RE, token.text):
             counts.append(to_positive_int(token.text))
         elif token.lower_ in BOTH:
